@@ -1,25 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { ToastContainer } from 'react-toastify';
+import {useEffect} from 'react'
+import MasterLayout from './layouts/Masterlayout/MasterLayout';
+import { Route, Routes } from 'react-router-dom';
+import { publicRouter, restrictRoutes } from './routes';
 
-function App() {
+function App  () {
+  useEffect(() => {
+
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      start
+      <MasterLayout>
+        <Routes>
+          {publicRouter.map((router, i) => {
+              const Page = router.component;
+              return <Route key={i} path={router.path} element={<Page />} />;
+          })}
+          {restrictRoutes.map((router, i) => {
+              const Page = router.component;
+              return <Route key={i} path={router.path} element={<Page />} />;
+          })}
+          <Route 
+            path="*" 
+            // element={<NotFound />} 
+          />
+        </Routes>
+      </MasterLayout>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+    </>
   );
 }
 

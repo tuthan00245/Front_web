@@ -1,0 +1,79 @@
+//Font
+// @font-face {
+//     font-family: "Roboto-Light";
+//     src: url('../../assets/fonts/Roboto-Light.ttf');
+// }
+// @font-face {
+//     font-family: "Roboto-Bold";
+//     src: url('../../assets/fonts/Roboto-Bold.ttf');
+// }
+
+// @font-face {
+//     font-family: "Roboto-Regular";
+//     src: url('../../assets/fonts/Roboto-Regular.ttf');
+// }
+
+//Init css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto-Regular","sans-serif";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #3d464d;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    // width: calc(100vw - 450px);
+    width: 1140px;
+    // width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #47991f;
+    border-radius: 10px;
+}
+
+.modal-style .ant-modal-body {
+    color: #606266;
+    font-size: 16px;
+}
+
+.modal-style .ant-btn-primary {
+    background-color: #47991f;
+    color: #fff;
+
+    &:hover {
+        background-color: #73b352;
+    }
+}
+
+.modal-style span {
+    font-size: 14px;
+}
