@@ -8,7 +8,6 @@ type Props = {};
 const Home = (props: Props) => {
     return (
         <div className="home-page">
-            2222
             <HomeSlider />
             {/* <HomeCategory />
             <HomeNews /> */}

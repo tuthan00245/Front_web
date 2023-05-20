@@ -30,7 +30,6 @@ const HomeSlider = (props: Props) =>{
                 disableOnInteraction: false,
             }}
         >
-            333
             {banner?.slice(0, 3).map((item: ICategory, i) => (
                 <SwiperSlide key={i} className="slide">
                     <div className="slide__image-card">

@@ -10,16 +10,15 @@ function App  () {
   })
   return (
     <>
-      start
       <MasterLayout>
         <Routes>
           {publicRouter.map((router, i) => {
-              const Page = router.component;
-              return <Route key={i} path={router.path} element={<Page />} />;
+            const Page = router.component;
+            return <Route key={i} path={router.path} element={<Page />} />;
           })}
           {restrictRoutes.map((router, i) => {
-              const Page = router.component;
-              return <Route key={i} path={router.path} element={<Page />} />;
+            const Page = router.component;
+            return <Route key={i} path={router.path} element={<Page />} />;
           })}
           <Route 
             path="*" 

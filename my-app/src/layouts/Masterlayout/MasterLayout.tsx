@@ -9,7 +9,7 @@ type Props = {
 const MasterLayout = ({ children }: Props) => {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             {children}
             <Footer />
         </>
