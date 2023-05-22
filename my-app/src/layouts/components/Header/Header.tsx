@@ -1,24 +1,21 @@
 import React from 'react'
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
-
-const { Header, Content, Footer } = Layout;
+import './Header.scss'
+import Navbar from '../Navbar/Navbar'
+import Menu from '../Menu/Menu'
 
 const PageHeader: React.FC = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
+
   return (
-    <Layout className="layout">
-      <Header style={{ display: 'flex', alignItems: 'center' }}>
-        <div className="demo-logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-        />
-      </Header>
-      
-    </Layout>
+    <div className='header'>
+      <div className="wrapper">
+        <div className="top">
+          <Navbar/>
+        </div>
+        <div className="bottom">
+          <Menu/>
+        </div>
+      </div>
+    </div>
   )
 }
 export default PageHeader
