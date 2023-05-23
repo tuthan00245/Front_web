@@ -11,9 +11,11 @@ const PageHeader: React.FC = () => {
         <div className="top">
           <Navbar/>
         </div>
+        <div className="border-radius"></div>
         <div className="bottom">
           <Menu/>
         </div>
+        <div className="border-radius"></div>
       </div>
     </div>
   )

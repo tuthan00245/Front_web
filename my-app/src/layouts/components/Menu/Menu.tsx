@@ -43,7 +43,7 @@ const Menu = () => {
         </div>
         <div className="item">
           <Link to="/electronics">
-            <span>HOME</span>ELECTRONICS
+            <span>ELECTRONICS</span>
           </Link>
         </div>
       </div>
