@@ -1,6 +1,7 @@
 import './Home.scss';
 import HomeSlider from './HomeSlider/HomeSlider';
 import HomeDeals from './HomeDeals/HomeDeals';
+import HomeProducts from './HomeProducts/HomeProducts';
 // import HomeCategory from './HomeCategory/HomeCategory';
 // import HomeNews from './HomeNews/HomeNews';
 
@@ -11,6 +12,7 @@ const Home = (props: Props) => {
         <div className="home-page">
             <HomeSlider />
             <HomeDeals />
+            <HomeProducts />
             {/* <HomeCategory />
             <HomeNews /> */}
         </div>

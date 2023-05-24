@@ -2,7 +2,8 @@ import Home from '../pages/Home/Home';
 
 
 const publicRouter = [
-    {path: '', component: Home},
+    {path: '/', component: Home},
+    {path: '/products', component: Home},
 ]
 const restrictRoutes = [
     {path: '/', component: Home},
